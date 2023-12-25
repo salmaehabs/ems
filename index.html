@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="wb.js" defer></script>
+    <title>Emergency Medical Sevices</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"> E   <span>M</span> S </a>
+        
+        <nav class="navigation">
+            <a href ="#Home"> Home </a> 
+            <a href ="#Services"> Services </a> 
+            <a href ="#About"> About </a>  
+            <a href ="#Book"> Book </a> 
+            <a href ="#Contact"> Contact </a> 
+        </nav>
+        <nav class="navbar">
+            
+            <div class="links">
+                <span class="close-btn material-symbols-rounded"></span>
+                
+            <button class="login-btn">LOG IN</button>
+       </div>
+          </nav>
+          
+    </header>
+
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">×</span>
+        <div class="form-box login">
+           
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="ems.php" method="post">
+                    <div class="input-field">
+                        <input type="text" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="password" name="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot password?</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Signup</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form action="signup.php" method="post">
+                    <div class="input-field">
+                        <input type="text" id="newemail" name="newemail" required>
+                        <label for="newemail">Enter your email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="newpass" name="newpass" required>
+                        <label for="newpass">Create password</label>
+                    </div>
+                    
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account? 
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section class="main" id="Home"> 
+     
+      <div>
+       <h1> Stay Safe, Stay Healthy</h1> <br> 
+       <br>
+       <p> 
+        In today's fast-paced world, access to fast and effective medical services is critical when faced with a medical emergency or seeking immediate medical care,the ability
+        to receive quick medical services can significantly impact the outcome of a situation.
+
+       </p>      
+       <br>
+       <br>
+       <a href="#Contact"class= "botton" > Contact Now </a>
+
+        
+      </div>
+     
+
+
+
+
+    </section>
+    
+    <section class="items"  id="Services">
+
+    <h2 class="title"> Our Services</h2>
+     <div class="content">
+        <div class="item">
+            <div class="icons">
+
+                <i class="fa-solid fa-truck-medical" > </i>
+                
+            </div>
+            <div class="info">
+             <h3>Ambulance Service </h3>
+            </div>
+
+        
+
+
+        </div>
+        <div class="item">
+            <div class="icons">
+
+                <i class="fa-solid fa-kit-medical"></i>
+                
+            </div>
+            <div class="info">
+             <h3>Paramedic Services </h3>
+            </div>
+
+     </div>
+     <div class="item">
+        <div class="icons">
+
+            <i class="fa-solid fa-user-doctor"></i>
+            
+        </div>
+        <div class="info">
+         <h3>Experts Consultancy </h3>
+        </div>
+
+ </div>
+    </section>
+
+    <section class="About" id="About">
+     <h2 class="title">About Us</h2>
+      <div class="row">
+      <div class="image">
+        <img src="Medicine-bro.png">
+     </div>
+
+     <div class="information">
+      <h2>We Take care of your health</h2> <br>
+      <p>We provide emergency medical services Which is the first call for emergency health cases such as traffic accidents, and its importance lies in the rapid response to provide the necessary care to patients to ensure their health
+        Where each emergency requires a specific type of first aid, and it varies according to the symptoms and the reasons that led to this situation, so we are working to provide the best health care as soon as possible to preserve the lives of patients.
+      </p>
+
+     </div>
+
+
+      </div>
+    </section>
+    
+    <section class="Book" id="Book">
+        <h2 class="title">Book Now</h2>
+    <div class="row">
+        <div class="image">
+            <img src="Online Doctor-rafiki (1).png">
+        </div>
+       <form action="appo.php" method="post">
+        <h3>Book An Appointment</h3>
+        <input type="text" placeholder="Your Name" class="box" id="name" name="name">
+        <input type="number" placeholder="Your Number" class="box" id="naumber" name="number">
+        <input type="email" placeholder="Your EMAIL" class="box" id="email" name="email" required>
+        <input type="text" placeholder="Choose Service" class="box" id="service" name="service" required>
+        <input type="date" class="box" id="date" name="date" required>
+        <input type="submit" value="Book Now" class="btn" >
+      </form>
+    </div>
+    </section>
+    
+    <section class="contact" id="Contact">
+     <h2 class="title">Contact US</h2>
+
+     <div class="content">
+        <div class="item">
+            <div class="icons">
+
+                <i class="fa-solid fa-phone"></i>
+                
+            </div>
+            <div class="info">
+             <h3>Phone Number</h3>
+             <p>+2010658964</p>
+            </div>
+
+        
+
+
+        </div>
+        <div class="item">
+            <div class="icons">
+
+                <i class="fa-solid fa-envelope"></i>
+                
+            </div>
+            <div class="info">
+             <h3>E-Mail </h3>
+             <p>ems@gmail.com</p>
+            </div>
+
+     </div>
+
+    </section>
+   
+    
+
+</body>
+</html>
